@@ -1,0 +1,29 @@
+IvanMoore91
+28693597
+--- ORDERS ---
+Bagels (6-pack), $2.16, Quantity: 2, Category: Bakery, Date: 2025-09-13
+Organic Strawberries, $3.73, Quantity: 3, Category: Produce, Date: 2025-10-01
+Organic Strawberries, $5.06, Quantity: 3, Category: Produce, Date: 2025-09-01
+Ground Beef (1lb), $10.62, Quantity: 3, Category: Meat & Seafood, Date: 2025-09-27
+Cheddar Cheese Block, $14.94, Quantity: 3, Category: Dairy, Date: 2025-10-03
+Diced Tomatoes Can, $2.07, Quantity: 3, Category: Canned Goods, Date: 2025-09-28
+Ripe Bananas, $5.70, Quantity: 4, Category: Produce, Date: 2025-09-15
+Fuji Apples, $3.47, Quantity: 3, Category: Produce, Date: 2025-09-20
+Cheddar Cheese Block, $10.01, Quantity: 4, Category: Dairy, Date: 2025-09-02
+Cream of Mushroom Soup Can, $6.59, Quantity: 3, Category: Canned Goods, Date: 2025-09-01
+Whole Wheat Rolls, $4.62, Quantity: 1, Category: Bakery, Date: 2025-09-11
+Orange Juice Carton, $11.54, Quantity: 1, Category: Beverages, Date: 2025-09-14
+Ripe Bananas, $3.88, Quantity: 4, Category: Produce, Date: 2025-09-07
+Bagels (6-pack), $6.74, Quantity: 3, Category: Bakery, Date: 2025-09-05
+Black Beans Can, $6.35, Quantity: 1, Category: Canned Goods, Date: 2025-09-01
+Salmon Fillet, $29.09, Quantity: 1, Category: Meat & Seafood, Date: 2025-09-28
+Sparkling Water (12pk), $24.80, Quantity: 2, Category: Beverages, Date: 2025-09-10
+Orange Juice Carton, $9.25, Quantity: 3, Category: Beverages, Date: 2025-09-28
+Orange Juice Carton, $32.39, Quantity: 2, Category: Beverages, Date: 2025-10-01
+Milk Gallon (Whole), $13.98, Quantity: 2, Category: Dairy, Date: 2025-09-13
+Sparkling Water (12pk), $5.96, Quantity: 4, Category: Beverages, Date: 2025-09-16
+Orange Juice Carton, $17.23, Quantity: 2, Category: Beverages, Date: 2025-09-25
+Artisan Sourdough Loaf, $6.00, Quantity: 4, Category: Bakery, Date: 2025-10-01
+Yogurt (32oz), $6.99, Quantity: 1, Category: Dairy, Date: 2025-09-13
+Ripe Bananas, $1.28, Quantity: 1, Category: Produce, Date: 2025-09-11
+Ground Beef (1lb), $18.85, Quantity: 3, Category: Meat & Seafood, Date: 2025-09-13

@@ -1,0 +1,32 @@
+ChrisMiller20
+84725395
+--- ORDERS ---
+Organic Strawberries, $6.90, Quantity: 1, Category: Produce, Date: 2025-09-24
+Milk Gallon (Whole), $5.70, Quantity: 2, Category: Dairy, Date: 2025-09-21
+Bagels (6-pack), $4.96, Quantity: 4, Category: Bakery, Date: 2025-09-29
+Cheddar Cheese Block, $11.06, Quantity: 1, Category: Dairy, Date: 2025-09-17
+Seedless Grapes, $5.30, Quantity: 1, Category: Produce, Date: 2025-10-02
+Orange Juice Carton, $24.10, Quantity: 2, Category: Beverages, Date: 2025-10-03
+Artisan Sourdough Loaf, $3.69, Quantity: 2, Category: Bakery, Date: 2025-09-06
+Salmon Fillet, $15.79, Quantity: 2, Category: Meat & Seafood, Date: 2025-09-20
+Whole Wheat Rolls, $3.11, Quantity: 3, Category: Bakery, Date: 2025-09-27
+Ground Beef (1lb), $20.42, Quantity: 4, Category: Meat & Seafood, Date: 2025-09-07
+Orange Juice Carton, $34.64, Quantity: 2, Category: Beverages, Date: 2025-10-04
+Sparkling Water (12pk), $32.65, Quantity: 1, Category: Beverages, Date: 2025-09-27
+Ripe Bananas, $1.68, Quantity: 2, Category: Produce, Date: 2025-09-07
+Milk Gallon (Whole), $2.66, Quantity: 2, Category: Dairy, Date: 2025-09-30
+Whole Wheat Rolls, $2.08, Quantity: 2, Category: Bakery, Date: 2025-09-18
+Cream of Mushroom Soup Can, $3.95, Quantity: 3, Category: Canned Goods, Date: 2025-10-01
+Ripe Avocados, $2.45, Quantity: 2, Category: Produce, Date: 2025-10-04
+Peeled Peaches Can, $6.79, Quantity: 4, Category: Canned Goods, Date: 2025-09-15
+Cream of Mushroom Soup Can, $6.97, Quantity: 1, Category: Canned Goods, Date: 2025-09-23
+Seedless Grapes, $6.15, Quantity: 3, Category: Produce, Date: 2025-09-02
+Artisan Sourdough Loaf, $3.43, Quantity: 2, Category: Bakery, Date: 2025-09-04
+Black Beans Can, $1.89, Quantity: 4, Category: Canned Goods, Date: 2025-09-17
+Organic Strawberries, $1.70, Quantity: 3, Category: Produce, Date: 2025-09-17
+Salmon Fillet, $20.02, Quantity: 1, Category: Meat & Seafood, Date: 2025-09-12
+Chicken Breasts (2lb), $12.22, Quantity: 2, Category: Meat & Seafood, Date: 2025-09-07
+Artisan Sourdough Loaf, $3.29, Quantity: 2, Category: Bakery, Date: 2025-09-09
+Black Beans Can, $3.71, Quantity: 3, Category: Canned Goods, Date: 2025-09-05
+Artisan Sourdough Loaf, $3.32, Quantity: 3, Category: Bakery, Date: 2025-09-27
+Peeled Peaches Can, $6.89, Quantity: 3, Category: Canned Goods, Date: 2025-09-30

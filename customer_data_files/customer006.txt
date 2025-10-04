@@ -1,0 +1,24 @@
+JuliaTaylor25
+45905677
+--- ORDERS ---
+Seedless Grapes, $6.24, Quantity: 2, Category: Produce, Date: 2025-10-01
+Bagels (6-pack), $5.74, Quantity: 4, Category: Bakery, Date: 2025-09-07
+Ground Beef (1lb), $9.29, Quantity: 2, Category: Meat & Seafood, Date: 2025-09-21
+Peeled Peaches Can, $1.54, Quantity: 2, Category: Canned Goods, Date: 2025-09-30
+Cheddar Cheese Block, $6.02, Quantity: 2, Category: Dairy, Date: 2025-09-23
+Cheddar Cheese Block, $8.61, Quantity: 2, Category: Dairy, Date: 2025-09-02
+Orange Juice Carton, $30.14, Quantity: 2, Category: Beverages, Date: 2025-09-19
+Salmon Fillet, $32.49, Quantity: 4, Category: Meat & Seafood, Date: 2025-09-19
+Fair Trade Coffee (Ground), $14.62, Quantity: 3, Category: Beverages, Date: 2025-09-21
+Ripe Avocados, $3.75, Quantity: 1, Category: Produce, Date: 2025-09-16
+Fuji Apples, $3.36, Quantity: 3, Category: Produce, Date: 2025-09-12
+Chicken Breasts (2lb), $25.41, Quantity: 2, Category: Meat & Seafood, Date: 2025-09-09
+Chicken Breasts (2lb), $6.41, Quantity: 2, Category: Meat & Seafood, Date: 2025-09-01
+Whole Wheat Rolls, $6.45, Quantity: 2, Category: Bakery, Date: 2025-09-07
+Whole Wheat Rolls, $6.61, Quantity: 3, Category: Bakery, Date: 2025-09-05
+Yogurt (32oz), $2.56, Quantity: 1, Category: Dairy, Date: 2025-09-13
+Sparkling Water (12pk), $32.18, Quantity: 3, Category: Beverages, Date: 2025-09-08
+Tuna in Water Can, $2.99, Quantity: 1, Category: Canned Goods, Date: 2025-09-18
+Organic Strawberries, $6.24, Quantity: 2, Category: Produce, Date: 2025-09-02
+Yogurt (32oz), $8.31, Quantity: 4, Category: Dairy, Date: 2025-09-22
+Ground Beef (1lb), $10.57, Quantity: 3, Category: Meat & Seafood, Date: 2025-09-12

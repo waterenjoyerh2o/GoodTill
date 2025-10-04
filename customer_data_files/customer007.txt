@@ -1,0 +1,32 @@
+DanaWilliams31
+68936663
+--- ORDERS ---
+Sparkling Water (12pk), $30.33, Quantity: 4, Category: Beverages, Date: 2025-09-22
+Organic Strawberries, $5.89, Quantity: 4, Category: Produce, Date: 2025-09-23
+Orange Juice Carton, $16.40, Quantity: 3, Category: Beverages, Date: 2025-09-21
+Ripe Avocados, $2.33, Quantity: 1, Category: Produce, Date: 2025-09-18
+Ripe Bananas, $5.52, Quantity: 2, Category: Produce, Date: 2025-09-01
+Cream of Mushroom Soup Can, $3.53, Quantity: 2, Category: Canned Goods, Date: 2025-09-28
+Yogurt (32oz), $11.10, Quantity: 2, Category: Dairy, Date: 2025-09-26
+Sparkling Water (12pk), $28.86, Quantity: 4, Category: Beverages, Date: 2025-09-16
+Bagels (6-pack), $2.90, Quantity: 2, Category: Bakery, Date: 2025-09-06
+Artisan Sourdough Loaf, $5.23, Quantity: 1, Category: Bakery, Date: 2025-09-01
+Tuna in Water Can, $6.54, Quantity: 3, Category: Canned Goods, Date: 2025-09-25
+Milk Gallon (Whole), $6.99, Quantity: 3, Category: Dairy, Date: 2025-09-08
+Ripe Bananas, $6.68, Quantity: 1, Category: Produce, Date: 2025-09-19
+Milk Gallon (Whole), $8.80, Quantity: 2, Category: Dairy, Date: 2025-09-11
+Artisan Sourdough Loaf, $4.41, Quantity: 1, Category: Bakery, Date: 2025-10-03
+Artisan Sourdough Loaf, $3.91, Quantity: 1, Category: Bakery, Date: 2025-09-15
+Cheddar Cheese Block, $12.02, Quantity: 4, Category: Dairy, Date: 2025-09-26
+Yogurt (32oz), $13.95, Quantity: 4, Category: Dairy, Date: 2025-10-03
+Milk Gallon (Whole), $9.39, Quantity: 3, Category: Dairy, Date: 2025-10-03
+Ground Beef (1lb), $32.53, Quantity: 1, Category: Meat & Seafood, Date: 2025-09-24
+Ripe Bananas, $5.28, Quantity: 2, Category: Produce, Date: 2025-09-12
+Black Beans Can, $4.81, Quantity: 4, Category: Canned Goods, Date: 2025-09-23
+Bagels (6-pack), $5.34, Quantity: 4, Category: Bakery, Date: 2025-09-30
+Ripe Avocados, $2.86, Quantity: 1, Category: Produce, Date: 2025-09-13
+Cheddar Cheese Block, $7.78, Quantity: 3, Category: Dairy, Date: 2025-09-12
+Ripe Bananas, $4.67, Quantity: 1, Category: Produce, Date: 2025-09-18
+Orange Juice Carton, $21.35, Quantity: 3, Category: Beverages, Date: 2025-09-09
+Orange Juice Carton, $18.05, Quantity: 3, Category: Beverages, Date: 2025-09-17
+Fair Trade Coffee (Ground), $26.07, Quantity: 1, Category: Beverages, Date: 2025-09-26

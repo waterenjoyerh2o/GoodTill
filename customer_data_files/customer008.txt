@@ -1,0 +1,24 @@
+FionaDavis22
+60424665
+--- ORDERS ---
+Cream of Mushroom Soup Can, $4.62, Quantity: 2, Category: Canned Goods, Date: 2025-09-22
+Cream of Mushroom Soup Can, $4.44, Quantity: 1, Category: Canned Goods, Date: 2025-09-20
+Whole Wheat Rolls, $6.07, Quantity: 2, Category: Bakery, Date: 2025-09-06
+Ground Beef (1lb), $26.46, Quantity: 4, Category: Meat & Seafood, Date: 2025-09-07
+Peeled Peaches Can, $3.06, Quantity: 1, Category: Canned Goods, Date: 2025-09-18
+Bagels (6-pack), $4.96, Quantity: 3, Category: Bakery, Date: 2025-09-12
+Bagels (6-pack), $6.69, Quantity: 1, Category: Bakery, Date: 2025-09-20
+Chicken Breasts (2lb), $22.48, Quantity: 1, Category: Meat & Seafood, Date: 2025-09-12
+Milk Gallon (Whole), $10.06, Quantity: 1, Category: Dairy, Date: 2025-09-21
+Fair Trade Coffee (Ground), $13.09, Quantity: 2, Category: Beverages, Date: 2025-09-13
+Cream of Mushroom Soup Can, $4.76, Quantity: 1, Category: Canned Goods, Date: 2025-09-16
+Fuji Apples, $2.25, Quantity: 2, Category: Produce, Date: 2025-09-14
+Diced Tomatoes Can, $2.24, Quantity: 3, Category: Canned Goods, Date: 2025-09-15
+Cheddar Cheese Block, $7.11, Quantity: 1, Category: Dairy, Date: 2025-09-07
+Ground Beef (1lb), $34.25, Quantity: 2, Category: Meat & Seafood, Date: 2025-09-08
+Sparkling Water (12pk), $26.98, Quantity: 2, Category: Beverages, Date: 2025-09-17
+Artisan Sourdough Loaf, $4.43, Quantity: 4, Category: Bakery, Date: 2025-09-20
+Sparkling Water (12pk), $28.39, Quantity: 2, Category: Beverages, Date: 2025-09-12
+Ground Beef (1lb), $7.74, Quantity: 2, Category: Meat & Seafood, Date: 2025-10-02
+Milk Gallon (Whole), $8.75, Quantity: 3, Category: Dairy, Date: 2025-09-11
+Yogurt (32oz), $11.71, Quantity: 2, Category: Dairy, Date: 2025-09-21

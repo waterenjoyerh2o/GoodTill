@@ -1,0 +1,30 @@
+IvanSmith40
+93991303
+--- ORDERS ---
+Black Beans Can, $2.17, Quantity: 2, Category: Canned Goods, Date: 2025-09-04
+Diced Tomatoes Can, $3.50, Quantity: 4, Category: Canned Goods, Date: 2025-09-25
+Tuna in Water Can, $2.38, Quantity: 1, Category: Canned Goods, Date: 2025-09-05
+Artisan Sourdough Loaf, $3.92, Quantity: 1, Category: Bakery, Date: 2025-09-08
+Yogurt (32oz), $7.49, Quantity: 3, Category: Dairy, Date: 2025-09-11
+Milk Gallon (Whole), $7.20, Quantity: 4, Category: Dairy, Date: 2025-10-02
+Diced Tomatoes Can, $2.83, Quantity: 1, Category: Canned Goods, Date: 2025-09-05
+Yogurt (32oz), $6.88, Quantity: 1, Category: Dairy, Date: 2025-09-09
+Black Beans Can, $3.59, Quantity: 3, Category: Canned Goods, Date: 2025-09-03
+Ripe Avocados, $1.78, Quantity: 1, Category: Produce, Date: 2025-10-01
+Fair Trade Coffee (Ground), $16.19, Quantity: 2, Category: Beverages, Date: 2025-09-25
+Ground Beef (1lb), $11.91, Quantity: 1, Category: Meat & Seafood, Date: 2025-09-09
+Organic Strawberries, $2.85, Quantity: 2, Category: Produce, Date: 2025-09-30
+Artisan Sourdough Loaf, $3.95, Quantity: 1, Category: Bakery, Date: 2025-09-10
+Orange Juice Carton, $29.14, Quantity: 2, Category: Beverages, Date: 2025-09-06
+Chicken Breasts (2lb), $33.88, Quantity: 2, Category: Meat & Seafood, Date: 2025-09-20
+Orange Juice Carton, $17.57, Quantity: 2, Category: Beverages, Date: 2025-09-26
+Artisan Sourdough Loaf, $3.87, Quantity: 3, Category: Bakery, Date: 2025-09-29
+Artisan Sourdough Loaf, $5.74, Quantity: 4, Category: Bakery, Date: 2025-09-10
+Peeled Peaches Can, $3.31, Quantity: 2, Category: Canned Goods, Date: 2025-09-04
+Peeled Peaches Can, $3.33, Quantity: 1, Category: Canned Goods, Date: 2025-09-27
+Organic Strawberries, $2.52, Quantity: 1, Category: Produce, Date: 2025-09-22
+Black Beans Can, $6.90, Quantity: 3, Category: Canned Goods, Date: 2025-09-29
+Sparkling Water (12pk), $14.44, Quantity: 3, Category: Beverages, Date: 2025-09-30
+Orange Juice Carton, $31.36, Quantity: 1, Category: Beverages, Date: 2025-09-04
+Yogurt (32oz), $7.82, Quantity: 4, Category: Dairy, Date: 2025-10-03
+Chicken Breasts (2lb), $11.32, Quantity: 1, Category: Meat & Seafood, Date: 2025-09-24

@@ -1,0 +1,30 @@
+DanaJones64
+55823267
+--- ORDERS ---
+Cheddar Cheese Block, $12.43, Quantity: 3, Category: Dairy, Date: 2025-09-10
+Milk Gallon (Whole), $13.76, Quantity: 2, Category: Dairy, Date: 2025-10-03
+Bagels (6-pack), $5.35, Quantity: 4, Category: Bakery, Date: 2025-09-11
+Orange Juice Carton, $17.54, Quantity: 2, Category: Beverages, Date: 2025-09-26
+Milk Gallon (Whole), $14.20, Quantity: 1, Category: Dairy, Date: 2025-09-11
+Organic Strawberries, $1.72, Quantity: 4, Category: Produce, Date: 2025-09-04
+Diced Tomatoes Can, $1.56, Quantity: 3, Category: Canned Goods, Date: 2025-09-21
+Diced Tomatoes Can, $3.97, Quantity: 2, Category: Canned Goods, Date: 2025-09-08
+Chicken Breasts (2lb), $32.92, Quantity: 1, Category: Meat & Seafood, Date: 2025-09-22
+Yogurt (32oz), $13.60, Quantity: 1, Category: Dairy, Date: 2025-09-11
+Orange Juice Carton, $20.13, Quantity: 2, Category: Beverages, Date: 2025-09-05
+Bagels (6-pack), $3.18, Quantity: 3, Category: Bakery, Date: 2025-09-10
+Peeled Peaches Can, $1.50, Quantity: 1, Category: Canned Goods, Date: 2025-09-09
+Milk Gallon (Whole), $9.54, Quantity: 4, Category: Dairy, Date: 2025-09-16
+Whole Wheat Rolls, $3.56, Quantity: 2, Category: Bakery, Date: 2025-09-21
+Salmon Fillet, $21.34, Quantity: 2, Category: Meat & Seafood, Date: 2025-09-17
+Seedless Grapes, $4.66, Quantity: 2, Category: Produce, Date: 2025-09-12
+Seedless Grapes, $4.16, Quantity: 3, Category: Produce, Date: 2025-09-20
+Chicken Breasts (2lb), $27.34, Quantity: 3, Category: Meat & Seafood, Date: 2025-09-21
+Orange Juice Carton, $12.29, Quantity: 3, Category: Beverages, Date: 2025-09-11
+Orange Juice Carton, $31.59, Quantity: 3, Category: Beverages, Date: 2025-09-10
+Whole Wheat Rolls, $2.45, Quantity: 1, Category: Bakery, Date: 2025-09-09
+Fair Trade Coffee (Ground), $26.28, Quantity: 3, Category: Beverages, Date: 2025-09-05
+Milk Gallon (Whole), $10.61, Quantity: 1, Category: Dairy, Date: 2025-09-19
+Ground Beef (1lb), $16.68, Quantity: 1, Category: Meat & Seafood, Date: 2025-09-12
+Tuna in Water Can, $2.87, Quantity: 2, Category: Canned Goods, Date: 2025-09-15
+Ground Beef (1lb), $13.41, Quantity: 4, Category: Meat & Seafood, Date: 2025-09-14

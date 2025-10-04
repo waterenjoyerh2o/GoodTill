@@ -1,6 +1,8 @@
-import com.yourproject.data.CustomerDataLoader;
-import com.yourproject.model.Customer;
-import com.yourproject.model.FoodItem;
+package com.example.grocery.controller;
+
+import com.example.grocery.service.CustomerDataLoader;
+import com.example.grocery.model.Customer;
+import com.example.grocery.model.FoodItem;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,5 +1,7 @@
-import com.yourproject.model.Customer;
-import com.yourproject.model.FoodItem;
+package com.example.grocery.service;
+
+import com.example.grocery.model.Customer;
+import com.example.grocery.model.FoodItem;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

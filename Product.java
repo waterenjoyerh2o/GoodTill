@@ -7,17 +7,17 @@ public class Product{
     private double price;
     private int quantity; 
     private LocalDate expireDate; 
-    private String catagory; 
+    private String category; 
     private int upperRange; 
     private int lowerRange; 
 
 
-    public Product(String name, double price, int quantity, String catagoty, LocalDate expireDate){
+    public Product(String name, double price, int quantity, String category, LocalDate expireDate){
         this.name = name; 
+        this.price = price;
+        this. quantity = quantity;
+        this.category = category; 
         this.expireDate = expireDate; 
-        this.lowerRange = lowerRange;
-        this.upperRange = upperRange; 
-
     }
 
 
@@ -29,6 +29,7 @@ public class Product{
     public LocalDate expireDate(){
         return expireDate; 
     }
+
     //lower and upper range from a different file 
     public Integer checkExpirationDate(){
         LocalDate today = LocalDate.now();

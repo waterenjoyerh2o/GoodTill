@@ -1,25 +1,14 @@
 Produce Fuji Apples 30 90
-Produce Ripe Bananas 3 7
-Produce Seedless Grapes 7 14
 Produce Organic Strawberries 3 7
 Produce Ripe Avocados 4 7
 
 Canned Goods Black Beans Can 730 1825
-Canned Goods Diced Tomatoes Can 730 1825
 Canned Goods Tuna in Water Can 730 1825
-Canned Goods Cream of Mushroom Soup Can 730 1825
-Canned Goods Peeled Peaches Can 730 1825
 
 Bakery Artisan Sourdough Loaf 5 7
-Bakery Whole Wheat Rolls 4 6
-Bakery Bagels (6 pack) 5 7
 
-Beverages Fair Trade Coffee (Ground) 180 365
 Beverages Orange Juice Carton 21 28
 Beverages Sparkling Water (12pk) 1825 3650
 
 Dairy Milk Gallon (Whole) 7 10
-Dairy Cheddar Cheese Block 30 60
 Dairy Yogurt (32oz) 7 21
-
-Meat & Seafood Ground Beef (1lb) 2 3 Meat & Seafood Salmon Fillet 1 2 Meat & Seafood Chicken Breasts (2lb) 2 3

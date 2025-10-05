@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Inventory</title>
+    <style>
+        /* --- Existing CSS from the dashboard page --- */
+        html {
+          font-family: glacial indifference;
+          color: rgb(104, 130, 104);
+        }
+
+        .my-bordered-div {
+          width: 400px;
+          background-color: #ceeace;
+          border-radius: 10px;
+          padding: 40px 30px;
+          box-sizing: border-box;
+          display: inline-block;
+          text-align: center;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .flex-container {
+          display: flex;
+          justify-content: space-around;
+          align-items: flex-start;
+          width: 100%;
+        }
+
+        .div1, .div2 {
+          width: 48%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .div2 {
+            text-align: left;
+            align-items: flex-start;
+        }
+
+        .div2 h2 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .button-container {
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .background {
+        background-color: #688268;
+        }
+
+        .custom-button {
+          border-radius: 7px;
+          height: 30px;
+          /* Reduced width slightly to fit new button */
+          width: 65px; 
+          border: none;
+          background-color: white;
+          color: #688268;
+          font-family: glacial indifference;
+          cursor: pointer;
+          transition: background-color 0.3s, color 0.3s;
+        }
+
+        .custom-button:hover {
+          background-color: #688268;
+          color: white;
+        }
+
+        .woo {
+          border-radius: 7px;
+          height: 30px;
+          width: 200px;
+          border: none;
+          background-color: #688268;
+          color: #ffffff;
+          font-family: glacial indifference;
+          cursor: pointer;
+          transition: background-color 0.3s, color 0.3s;
+        }
+
+        .woo:hover {
+          background-color: #ffffff;
+          color: #688268;
+        }
+
+        .custom-button2 {
+          margin-left: 0;
+          height: 100px;
+          width: 100%;
+          border: none;
+          background-color: white;
+          color: #688268;
+          font-family: glacial indifference;
+          cursor: pointer;
+          transition: background-color 0.3s, color 0.3s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 5px 10px;
+          box-sizing: border-box;
+        }
+
+        .custom-button2:hover {
+          background-color: #688268;
+          color: white;
+        }
+
+        :focus {
+          outline: 0;
+          border-color: #2260ff;
+          box-shadow: 0 0 0 4px #b5cfbc; /* Slightly changed focus color */
+        }
+
+        .mydict div {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 0.5rem;
+          justify-content: center;
+        }
+
+        .mydict input[type="radio"] {
+          clip: rect(0 0 0 0);
+          clip-path: inset(100%);
+          height: 1px;
+          overflow: hidden;
+          position: absolute;
+          white-space: nowrap;
+          width: 1px;
+        }
+
+        .mydict input[type="radio"]:checked + span {
+          box-shadow: 0 0 0 0.0625em #00ed14;
+          background-color: #e1ffde;
+          z-index: 1;
+          color: #00ed14;
+        }
+
+        label span {
+          display: block;
+          cursor: pointer;
+          background-color: #fff;
+          padding: 0.375em .75em;
+          position: relative;
+          margin-left: .0625em;
+          box-shadow: 0 0 0 0.0625em #b5bfd9;
+          letter-spacing: .05em;
+          color: #3e4963;
+          text-align: center;
+          transition: background-color .5s ease;
+        }
+
+        label:first-child span {
+          border-radius: .375em 0 0 .375em;
+        }
+
+        label:last-child span {
+          border-radius: 0 .375em .375em 0;
+        }
+
+        /* --- New CSS for Search Page --- */
+        #search-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 1em;
+            font-family: glacial indifference;
+            color: #688268;
+        }
+
+        #search-results {
+            min-height: 200px;
+            text-align: center;
+        }
+
+        #search-input::placeholder {
+            color: #a0a0a0;
+        }
+    </style>
+</head>
+<body>
+
+<br>
+
+<center>
+  <div class="my-bordered-div">
+    <h1 id="search-header">Search Inventory</h1>
+
+    <input type="text" id="search-input" placeholder="Search by name or category..." oninput="handleSearch()">
+
+    <div id="search-results">
+        <p>Start typing to find your items.</p>
+    </div>
+
+    <br>
+    
+    <div class="button-container">
+        <div class="mydict">
+            <div>
+                <label>
+                    <input type="radio" name="radio">
+                    <span><a href="inventory-dashboard.html?id=73853787"><img src="https://i.ibb.co/yFqWPS8f/home.png" width="20" height="20"></a></span>
+                </label>
+                <label>
+                    <input type="radio" name="radio" checked>
+                    <span><a href="search-page.html"><img src="https://i.ibb.co/nM3VPrGM/magnifying-glass.png"width="20" height="20"></a></span>
+                </label>
+                <label>
+                    <input type="radio" name="radio">
+                    <span><a href="foodBandPage.html"><img src="https://i.ibb.co/hxsQLw09/heart.png"width="20" height="20"></a></span>
+                </label>
+                <label>
+                    <input type="radio" name="radio">
+                    <span><a href="addNewItemPage.html"><img src="https://i.ibb.co/XgGpBny/photo-camera-interface-symbol-for-button.png"width="20" height="20"></a></span>
+                </label>
+            </div>
+        </div>
+    </div>
+  </div>
+</center>
+
+<script>
+    // --- Existing Helper Functions ---
+    function getQueryParameter(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    function getExpirationStatus(daysLeft) {
+        let status = '🟢';
+        let statusText = `in <strong>${daysLeft} days!</strong>`;
+
+        if (daysLeft < 0) {
+            status = '⚫';
+            statusText = '<strong>EXPIRED!</strong>';
+        } else if (daysLeft <= 3) {
+            status = '🔴';
+            statusText = `in <strong>${daysLeft} day${daysLeft !== 1 ? 's' : ''}!</strong>`;
+        } else if (daysLeft <= 7) {
+            status = '🟡';
+            statusText = `in <strong>${daysLeft} days!</strong>`;
+        } else if (daysLeft > 7) {
+             statusText = `in over <strong>${Math.floor(daysLeft / 7)} week${Math.floor(daysLeft / 7) > 1 ? 's' : ''}!</strong>`;
+        }
+
+        return { status, statusText, daysLeft };
+    }
+
+    function getMockImage(name) {
+        if (name.toLowerCase().includes('milk') || name.toLowerCase().includes('yogurt')) return 'https://i.ibb.co/MxHSrvL7/Untitled-design-20.png';
+        if (name.toLowerCase().includes('apple')) return 'https://i.ibb.co/c8S0mR8/apple.png';
+        if (name.toLowerCase().includes('bean') || name.toLowerCase().includes('tuna')) return 'https://i.ibb.co/h7W0187/canned.png';
+        if (name.toLowerCase().includes('avocado') || name.toLowerCase().includes('strawberries')) return 'https://i.ibb.co/Wc6Y5Qf/avocado.png';
+        if (name.toLowerCase().includes('sourdough') || name.toLowerCase().includes('loaf')) return 'https://i.ibb.co/B2qdKQ3b/Untitled-design-18.png';
+        return 'https://via.placeholder.com/150x100?text=Food+Item';
+    }
+
+    function createFoodItemButton(item) {
+        const daysLeft = item.daysUntilExpiration;
+        const { status, statusText } = getExpirationStatus(daysLeft);
+        const imageSrc = getMockImage(item.name); 
+        const itemName = item.name; 
+
+        return `
+            <br><br>
+            <button class="custom-button2" data-category="${item.category}" data-daysleft="${daysLeft}" onclick="viewItemDetails('${itemName}')">
+                <div class="flex-container">
+                    <div class="div1"><img src="${imageSrc}" height="100px" width="150px"></div>
+                    <div class="div2">
+                        <h2>${itemName}</h2>
+                        ${status} will expire ${statusText}
+                        <br><small>(${item.category}) - Qty: ${item.quantity}</small>
+                    </div>
+                </div>
+            </button>
+        `;
+    }
+
+    function viewItemDetails(itemName) {
+        console.log(`Navigating to details for: ${itemName}`);
+        // In a real application, you would navigate to a detailed view page here
+        alert(`Viewing details for: ${itemName}`);
+    }
+
+    // --- Mock Data for demonstration ---
+    // In a real application, this would be loaded via loadCustomerInventory() from the dashboard page
+    window.fullInventoryData = [
+        { "name": "Organic Milk", "category": "Dairy", "daysUntilExpiration": 5, "quantity": 1 },
+        { "name": "Gala Apples", "category": "Produce", "daysUntilExpiration": 14, "quantity": 6 },
+        { "name": "Black Beans", "category": "Canned Goods", "daysUntilExpiration": 300, "quantity": 3 },
+        { "name": "Sourdough Loaf", "category": "Bakery", "daysUntilExpiration": -2, "quantity": 1 },
+        { "name": "Greek Yogurt", "category": "Dairy", "daysUntilExpiration": 1, "quantity": 4 },
+        { "name": "Fresh Strawberries", "category": "Produce", "daysUntilExpiration": 3, "quantity": 1 }
+    ];
+
+    // --- New Search Functions ---
+    function displaySearchResults(inventory) {
+        const resultsContainer = document.getElementById('search-results');
+        
+        if (inventory.length === 0) {
+            resultsContainer.innerHTML = '<p>No items match your search.</p>';
+            return;
+        }
+
+        resultsContainer.innerHTML = '';
+        inventory.forEach(item => {
+            const itemHtml = createFoodItemButton(item);
+            resultsContainer.insertAdjacentHTML('beforeend', itemHtml);
+        });
+    }
+
+    function handleSearch() {
+        if (!window.fullInventoryData) return;
+
+        const searchInput = document.getElementById('search-input').value.toLowerCase().trim();
+        const resultsContainer = document.getElementById('search-results');
+
+        if (searchInput.length === 0) {
+            resultsContainer.innerHTML = '<p>Start typing to find your items.</p>';
+            return;
+        }
+
+        const filteredItems = window.fullInventoryData.filter(item => {
+            const itemName = item.name.toLowerCase();
+            const itemCategory = item.category.toLowerCase();
+            
+            return itemName.includes(searchInput) || itemCategory.includes(searchInput);
+        });
+
+        displaySearchResults(filteredItems);
+    }
+</script>
+
+</body>
+</html>

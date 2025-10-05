@@ -6,52 +6,85 @@ html {
 }
 
 .my-bordered-div {
-    width: 200px; 
-    height: 200px;
-    padding: 90px;
-  background-color: #ceeace;
+    max-width: 400px; 
+    width: 100%; 
+    padding: 40px 30px; 
+    height: auto; /* Allow height to adjust to content */
+    display: block; /* Allows margin auto to center */
+    margin-left: auto; /* Center the element */
+    margin-right: auto; /* Center the element */
+    
+    background-color: #ceeace;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
 }
 
+.custom-button {
+    border-radius: 7px;
+    height: 30px;
+    /* Adjusted width to be 100% of its container, making it flexible */
+    width: 100%; 
+    border: none;
+    background-color: white; 
+    color: #688268; 
+    font-family: glacial indifference;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
+}
 
+.custom-button:hover {
+    background-color: #688268; 
+    color: white; 
+}
+
+.login-input {
+    width: 100%; 
+    height: 30px; 
+    padding: 5px;
+    margin-bottom: 15px; 
+    border-radius: 7px; 
+    border: 1px solid #688268; 
+    box-sizing: border-box; 
+    text-align: center;
+    font-family: glacial indifference;
+    color: #688268;
+}
 
 </style>
-
 
 <br><br><br><br>
 
-<center>
-    <div class="my-bordered-div">
-<h1> Welcome to GoodTill! </h1>
+<div class="my-bordered-div">
+        <h1> Welcome to GoodTill! </h1>
 
-    <a href="home.html"><button class="custom-button">Login Through ShopRite</button></a>
-    <br>
-  <br>
-    <a href="home.html"><button class="custom-button">Create an Account</button></a>
+        <a href="login-external.html"><button class="custom-button">Login Through ShopRite</button></a>
+        <br>
 
-</center>
+        <a href="create-account.html"><button class="custom-button">Create an Account</button></a>
 
-</div>
+        <hr style="border: 0; height: 1px; background-color: #a4c4a4; width: 80%; margin: 20px auto;">
+        
+        <h3>Login</h3>
+        
+        <input type="text" id="customerIdInput" class="login-input" placeholder="Enter ID">
+        
+        <button class="custom-button" type="button" onclick="handleLogin()">Login</button>
+    </div>
 
 
+<script>
+    function handleLogin() {
+        const customerId = document.getElementById('customerIdInput').value.trim();
+        
+        if (!customerId) {
+            alert('Please enter a customer ID (e.g., 73853787).');
+            return;
+        }
 
-
-<style>
-      .custom-button {
-        border-radius: 7px;
-  height: 30px;
-  width: 170px;
-        border: none;
-        background-color: white; /* Green background */
-        color: #688268; /* White text */
-        font-family: glacial indifference;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s;
-      }
-    
-      .custom-button:hover {
-        background-color: #688268; /* White background */
-        color: white; /* Green text */
-      }
-</style>
-    
+        console.log('Attempting login for Customer ID: ' + customerId);
+        
+        window.location.href = `inventory-dashboard.html?id=${customerId}`;
+    }
+</script>

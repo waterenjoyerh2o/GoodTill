@@ -1,3 +1,5 @@
+package com.example.grocery.model;
+
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 

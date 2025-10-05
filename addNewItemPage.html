@@ -10,7 +10,7 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'], 
+                        sans: ['glacial indifference', 'Inter', 'sans-serif'], 
                     },
                     colors: {
                         'primary-accent': '#688268',
@@ -22,11 +22,18 @@
         }
     </script>
     <style>
+        /* Import the correct font for consistency */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        @font-face {
+            font-family: 'glacial indifference';
+            src: url('glacial-indifference-regular.woff2') format('woff2');
+            /* Note: If Glacial Indifference isn't globally available, you need to link or embed the font files */
+        }
         
         body {
             color: #688268;
-            font-family: 'Inter', sans-serif;
+            font-family: 'glacial indifference', sans-serif;
+            background-color: white; /* Ensure body background is white */
         }
 
         .custom-submit-button {
@@ -36,14 +43,63 @@
             background-color: #688268 !important;
             color: white !important;
         }
+
+        /* --- DASHBOARD NAVIGATION STYLES FOR CONSISTENCY --- */
+        .mydict div {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 0.5rem;
+          justify-content: center;
+        }
+
+        .mydict input[type="radio"] {
+          clip: rect(0 0 0 0);
+          clip-path: inset(100%);
+          height: 1px;
+          overflow: hidden;
+          position: absolute;
+          white-space: nowrap;
+          width: 1px;
+        }
+
+        /* Active radio button styling */
+        .mydict input[type="radio"]:checked + span {
+          box-shadow: 0 0 0 0.0625em #00ed14;
+          background-color: #e1ffde;
+          z-index: 1;
+          color: #00ed14;
+        }
+
+        label span {
+          display: block;
+          cursor: pointer;
+          background-color: #fff;
+          padding: 0.375em .75em;
+          position: relative;
+          margin-left: .0625em;
+          box-shadow: 0 0 0 0.0625em #b5bfd9;
+          letter-spacing: .05em;
+          color: #3e4963;
+          text-align: center;
+          transition: background-color .5s ease;
+        }
+
+        label:first-child span {
+          border-radius: .375em 0 0 .375em;
+        }
+
+        label:last-child span {
+          border-radius: 0 .375em .375em 0;
+        }
+        
     </style>
 </head>
 <body class="bg-white font-sans min-h-screen p-4 md:p-8">
 
-    <div class="max-w-4xl mx-auto bg-bg-subtle rounded-2xl shadow-xl overflow-hidden">
+    <div class="max-w-md mx-auto bg-bg-subtle rounded-2xl shadow-xl overflow-hidden mt-8">
         
         <header class="p-6 bg-primary-accent text-white">
-            <a href="#" class="text-sm opacity-90 hover:opacity-100 text-bg-subtle" onclick="console.log('Navigate back to main list.')">
+            <a href="inventory-dashboard.html?id=73853787" class="text-sm opacity-90 hover:opacity-100 text-bg-subtle">
                 &larr; Back to Pantry
             </a>
             <h1 class="text-3xl font-bold mt-2 text-white">Track New Item</h1>
@@ -114,7 +170,32 @@
             </section>
 
         </main>
-    </div>
+        
+        <div class="p-4 pt-0">
+            <div class="button-container">
+                <div class="mydict">
+                    <div>
+                        <label>
+                            <input type="radio" name="radio">
+                            <span><a href="inventory-dashboard.html?id=73853787"><img src="https://i.ibb.co/yFqWPS8f/home.png" width="20" height="20"></a></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio">
+                            <span><a href="search-page.html"><img src="https://i.ibb.co/nM3VPrGM/magnifying-glass.png"width="20" height="20"></a></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio">
+                            <span><a href="foodBankPage.html"><img src="https://i.ibb.co/hxsQLw09/heart.png"width="20" height="20"></a></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio" checked>
+                            <span><a href="addNewItemPage.html"><img src="https://i.ibb.co/XgGpBny/photo-camera-interface-symbol-for-button.png"width="20" height="20"></a></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
 
     <script>
         function displayMessage(message, isError = false) {

@@ -5,14 +5,19 @@ html {
 }
 
 .my-bordered-div {
-  width: 400px;
-  background-color: #ceeace;
-  border-radius: 10px;
-  padding: 40px 30px;
-  box-sizing: border-box;
-  display: inline-block;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* MODIFIED: Consistent vertical padding (20px) from Login page */
+    max-width: 400px; 
+    width: 100%; 
+    padding: 20px 30px; /* Reduced vertical padding for size consistency */
+    height: auto; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    
+    background-color: #ceeace;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
 }
 
 .flex-container {
@@ -42,9 +47,9 @@ html {
 
 .button-container {
   display: flex;
-  gap: 10px;
+  gap: 5px; /* Reduced gap for seven buttons */
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Forces buttons onto a single line */
 }
 
 .background {
@@ -54,8 +59,9 @@ background-color: #688268;
 .custom-button {
   border-radius: 7px;
   height: 30px;
-  /* Reduced width slightly to fit new button */
-  width: 65px; 
+  flex-basis: 13%; /* Flexible width to fit 7 buttons */
+  min-width: 50px; 
+  width: auto; 
   border: none;
   background-color: white;
   color: #688268;
@@ -79,6 +85,7 @@ background-color: #688268;
   font-family: glacial indifference;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 10px;
 }
 
 .woo:hover {
@@ -101,6 +108,7 @@ background-color: #688268;
   justify-content: center;
   padding: 5px 10px;
   box-sizing: border-box;
+  margin-top: 10px;
 }
 
 .custom-button2:hover {
@@ -111,7 +119,7 @@ background-color: #688268;
 :focus {
   outline: 0;
   border-color: #2260ff;
-  box-shadow: 0 0 0 4px #b5cfbc; /* Slightly changed focus color */
+  box-shadow: 0 0 0 4px #b5cfbc; 
 }
 
 .mydict div {
@@ -163,8 +171,7 @@ label:last-child span {
 
 <br>
 
-<center>
-  <div class="my-bordered-div">
+<div class="my-bordered-div">
     <h1 id="welcome-header">Loading...</h1>
 
     <div class="button-container">
@@ -172,14 +179,15 @@ label:last-child span {
       <button class="custom-button" onclick="filterInventory('Dairy')">Dairy</button>
       <button class="custom-button" onclick="filterInventory('Canned Goods')">Canned</button>
       <button class="custom-button" onclick="filterInventory('Bakery')">Bakery</button>
-      <button class="custom-button" onclick="filterInventory('Expired')">Expired</button> <button class="custom-button" onclick="filterInventory('All')">All</button>
     </div>
-
     <br>
 
-    <button class="woo" onclick="sortInventory()">Sort By Warning</button>
+    <div class=""button-container">
+      <button class="custom-button" onclick="filterInventory('Expired')">Expired</button> 
+      <button class="custom-button" onclick="filterInventory('All')">All</button>
+      <button class="custom-button" onclick="sortInventory()">Sort</button>
+    <br>
 
-    <br><br>
     
     <div id="inventory-list">
         </div>
@@ -191,7 +199,7 @@ label:last-child span {
             <div>
                 <label>
                     <input type="radio" name="radio" checked="">
-                    <span><a href="inventory-dashboard.html?id=73853787"><img src="https://i.ibb.co/yFqWPS8f/home.png" width="20" height="20"></a></span>
+                    <span><a href="inventory-dashboard.html?id=251005"><img src="https://i.ibb.co/yFqWPS8f/home.png" width="20" height="20"></a></span>
                 </label>
                 <label>
                     <input type="radio" name="radio">
@@ -199,18 +207,16 @@ label:last-child span {
                 </label>
                 <label>
                     <input type="radio" name="radio">
-                    <span><a href="foodBankPage.html"><img src="https://i.ibb.co/hxsQLw09/heart.png"width="20" height="20"></a></span>
+                    <span><a href="foodBankPage.html"><img src="https://i.ibb.co/hxsQLw09/heart.png" width="20" height="20"></a></span>
                 </label>
                 <label>
                     <input type="radio" name="radio">
-                    <span><a href="addNewItemPage.html"><img src="https://i.ibb.co/XgGpBny/photo-camera-interface-symbol-for-button.png"width="20" height="20"></a></span>
+                    <span><a href="addNewItemPage.html"><img src="https://i.ibb.co/XgGpBny/photo-camera-interface-symbol-for-button.png" width="20" height="20"></a></span>
                 </label>
             </div>
         </div>
     </div>
   </div>
-</center>
-
 <script>
     function getQueryParameter(name) {
         const urlParams = new URLSearchParams(window.location.search);
@@ -253,7 +259,6 @@ label:last-child span {
         const itemName = item.name; 
 
         return `
-            <br><br>
             <button class="custom-button2" data-category="${item.category}" data-daysleft="${daysLeft}" onclick="viewItemDetails('${itemName}')">
                 <div class="flex-container">
                     <div class="div1"><img src="${imageSrc}" height="100px" width="150px"></div>
@@ -294,14 +299,14 @@ label:last-child span {
                 throw new Error(`HTTP error! Status: ${response.status}.`);
             }
 
+
             const inventory = await response.json(); 
             
             window.fullInventoryData = inventory;
             
             const userName = customerId === '73853787' ? 'EthanSmith70' : `Customer ${customerId}`;
-            welcomeHeader.textContent = `Hello HackRU!`;
+            welcomeHeader.textContent = `Hello HackRU!`; 
 
-            // Load only 'Active' (non-expired) items by default
             filterInventory('Active'); 
 
         } catch (error) {

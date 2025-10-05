@@ -1,0 +1,10 @@
+[
+    { "name": "Organic Strawberries", "category": "Produce", "quantity": 4, "daysUntilExpiration": 2 },
+    { "name": "Milk Gallon (Whole)", "category": "Dairy", "quantity": 4, "daysUntilExpiration": 7 },
+    { "name": "Ripe Avocados", "category": "Produce", "quantity": 7, "daysUntilExpiration": -15 },
+    { "name": "Artisan Sourdough Loaf", "category": "Bakery", "quantity": 6, "daysUntilExpiration": 1 },
+    { "name": "Tuna in Water Can", "category": "Canned Goods", "quantity": 4, "daysUntilExpiration": 346 },
+    { "name": "Black Beans Can", "category": "Canned Goods", "quantity": 7, "daysUntilExpiration": 340 },
+    { "name": "Yogurt (32oz)", "category": "Dairy", "quantity": 1, "daysUntilExpiration": 12 },
+    { "name": "Fuji Apples", "category": "Produce", "quantity": 7, "daysUntilExpiration": -2 }
+]

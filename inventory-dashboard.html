@@ -1,0 +1,366 @@
+<style>
+html {
+  font-family: glacial indifference;
+  color: rgb(104, 130, 104);
+}
+
+.my-bordered-div {
+  width: 400px;
+  background-color: #ceeace;
+  border-radius: 10px;
+  padding: 40px 30px;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.div1, .div2 {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div2 {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.div2 h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.background {
+background-color: #688268;
+}
+
+.custom-button {
+  border-radius: 7px;
+  height: 30px;
+  /* Reduced width slightly to fit new button */
+  width: 65px; 
+  border: none;
+  background-color: white;
+  color: #688268;
+  font-family: glacial indifference;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #688268;
+  color: white;
+}
+
+.woo {
+  border-radius: 7px;
+  height: 30px;
+  width: 200px;
+  border: none;
+  background-color: #688268;
+  color: #ffffff;
+  font-family: glacial indifference;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.woo:hover {
+  background-color: #ffffff;
+  color: #688268;
+}
+
+.custom-button2 {
+  margin-left: 0;
+  height: 100px;
+  width: 100%;
+  border: none;
+  background-color: white;
+  color: #688268;
+  font-family: glacial indifference;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.custom-button2:hover {
+  background-color: #688268;
+  color: white;
+}
+
+:focus {
+  outline: 0;
+  border-color: #2260ff;
+  box-shadow: 0 0 0 4px #b5cfbc; /* Slightly changed focus color */
+}
+
+.mydict div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+.mydict input[type="radio"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.mydict input[type="radio"]:checked + span {
+  box-shadow: 0 0 0 0.0625em #00ed14;
+  background-color: #e1ffde;
+  z-index: 1;
+  color: #00ed14;
+}
+
+label span {
+  display: block;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 0.375em .75em;
+  position: relative;
+  margin-left: .0625em;
+  box-shadow: 0 0 0 0.0625em #b5bfd9;
+  letter-spacing: .05em;
+  color: #3e4963;
+  text-align: center;
+  transition: background-color .5s ease;
+}
+
+label:first-child span {
+  border-radius: .375em 0 0 .375em;
+}
+
+label:last-child span {
+  border-radius: 0 .375em .375em 0;
+}
+</style>
+
+<br>
+
+<center>
+  <div class="my-bordered-div">
+    <h1 id="welcome-header">Loading...</h1>
+
+    <div class="button-container">
+      <button class="custom-button" onclick="filterInventory('Produce')">Produce</button>
+      <button class="custom-button" onclick="filterInventory('Dairy')">Dairy</button>
+      <button class="custom-button" onclick="filterInventory('Canned Goods')">Canned</button>
+      <button class="custom-button" onclick="filterInventory('Bakery')">Bakery</button>
+      <button class="custom-button" onclick="filterInventory('Expired')">Expired</button> <button class="custom-button" onclick="filterInventory('All')">All</button>
+    </div>
+
+    <br>
+
+    <button class="woo" onclick="sortInventory()">Sort By Warning</button>
+
+    <br><br>
+    
+    <div id="inventory-list">
+        </div>
+
+    <br>
+    <br>
+    <div class="button-container">
+        <div class="mydict">
+            <div>
+                <label>
+                    <input type="radio" name="radio" checked="">
+                    <span><a href="inventory-dashboard.html?id=73853787"><img src="https://i.ibb.co/yFqWPS8f/home.png" width="20" height="20"></a></span>
+                </label>
+                <label>
+                    <input type="radio" name="radio">
+                    <span><a href="search-page.html"><img src="https://i.ibb.co/nM3VPrGM/magnifying-glass.png"width="20" height="20"></a></span>
+                </label>
+                <label>
+                    <input type="radio" name="radio">
+                    <span><a href="foodBandPage.html"><img src="https://i.ibb.co/hxsQLw09/heart.png"width="20" height="20"></a></span>
+                </label>
+                <label>
+                    <input type="radio" name="radio">
+                    <span><a href="addNewItemPage.html"><img src="https://i.ibb.co/XgGpBny/photo-camera-interface-symbol-for-button.png"width="20" height="20"></a></span>
+                </label>
+            </div>
+        </div>
+    </div>
+  </div>
+</center>
+
+<script>
+    function getQueryParameter(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    function getExpirationStatus(daysLeft) {
+        let status = '🟢';
+        let statusText = `in <strong>${daysLeft} days!</strong>`;
+
+        if (daysLeft < 0) {
+            status = '⚫';
+            statusText = '<strong>EXPIRED!</strong>';
+        } else if (daysLeft <= 3) {
+            status = '🔴';
+            statusText = `in <strong>${daysLeft} day${daysLeft !== 1 ? 's' : ''}!</strong>`;
+        } else if (daysLeft <= 7) {
+            status = '🟡';
+            statusText = `in <strong>${daysLeft} days!</strong>`;
+        } else if (daysLeft > 7) {
+             statusText = `in over <strong>${Math.floor(daysLeft / 7)} week${Math.floor(daysLeft / 7) > 1 ? 's' : ''}!</strong>`;
+        }
+
+        return { status, statusText, daysLeft };
+    }
+
+    function getMockImage(name) {
+        if (name.toLowerCase().includes('milk') || name.toLowerCase().includes('yogurt')) return 'https://i.ibb.co/MxHSrvL7/Untitled-design-20.png';
+        if (name.toLowerCase().includes('apple')) return 'https://i.ibb.co/c8S0mR8/apple.png';
+        if (name.toLowerCase().includes('bean') || name.toLowerCase().includes('tuna')) return 'https://i.ibb.co/h7W0187/canned.png';
+        if (name.toLowerCase().includes('avocado') || name.toLowerCase().includes('strawberries')) return 'https://i.ibb.co/Wc6Y5Qf/avocado.png';
+        if (name.toLowerCase().includes('sourdough') || name.toLowerCase().includes('loaf')) return 'https://i.ibb.co/B2qdKQ3b/Untitled-design-18.png';
+        return 'https://via.placeholder.com/150x100?text=Food+Item';
+    }
+
+    function createFoodItemButton(item) {
+        const daysLeft = item.daysUntilExpiration;
+        const { status, statusText } = getExpirationStatus(daysLeft);
+        const imageSrc = getMockImage(item.name); 
+        const itemName = item.name; 
+
+        return `
+            <br><br>
+            <button class="custom-button2" data-category="${item.category}" data-daysleft="${daysLeft}" onclick="viewItemDetails('${itemName}')">
+                <div class="flex-container">
+                    <div class="div1"><img src="${imageSrc}" height="100px" width="150px"></div>
+                    <div class="div2">
+                        <h2>${itemName}</h2>
+                        ${status} will expire ${statusText}
+                        <br><small>(${item.category}) - Qty: ${item.quantity}</small>
+                    </div>
+                </div>
+            </button>
+        `;
+    }
+
+    async function loadCustomerInventory() {
+        const customerId = getQueryParameter('id');
+        const welcomeHeader = document.getElementById('welcome-header');
+        const inventoryContainer = document.getElementById('inventory-list');
+
+        if (!customerId) {
+            welcomeHeader.textContent = 'Error: No Customer ID provided.';
+            inventoryContainer.innerHTML = '<p>Please log in again.</p>';
+            return;
+        }
+
+        welcomeHeader.textContent = `Loading inventory for Customer ${customerId}...`; 
+        inventoryContainer.innerHTML = '<p>Loading inventory...</p>';
+
+        try {
+            const filePath = `./${customerId}.json`;
+            const response = await fetch(filePath);
+            
+            if (response.status === 404) {
+                welcomeHeader.textContent = `Hi Customer ${customerId}!`;
+                inventoryContainer.innerHTML = '<p>No inventory file found for this ID.</p>';
+                return;
+            }
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}.`);
+            }
+
+            const inventory = await response.json(); 
+            
+            window.fullInventoryData = inventory;
+            
+            const userName = customerId === '73853787' ? 'EthanSmith70' : `Customer ${customerId}`;
+            welcomeHeader.textContent = `Hi ${userName}!`;
+
+            // Load only 'Active' (non-expired) items by default
+            filterInventory('Active'); 
+
+        } catch (error) {
+            console.error('Failed to load inventory:', error);
+            inventoryContainer.innerHTML = `<p>Error loading data. Could not fetch ${customerId}.json. Ensure a local server is running.</p>`;
+        }
+    }
+    
+    function displayInventory(inventory, sortByWarning = false) {
+        const inventoryContainer = document.getElementById('inventory-list');
+        
+        if (inventory.length === 0) {
+            inventoryContainer.innerHTML = '<p>Your inventory is empty.</p>';
+            return;
+        }
+
+        let itemsToDisplay = [...inventory];
+
+        if (sortByWarning) {
+            itemsToDisplay.sort((a, b) => a.daysUntilExpiration - b.daysUntilExpiration);
+        }
+
+        inventoryContainer.innerHTML = '';
+
+        itemsToDisplay.forEach(item => {
+            const itemHtml = createFoodItemButton(item);
+            inventoryContainer.insertAdjacentHTML('beforeend', itemHtml);
+        });
+    }
+
+    function viewItemDetails(itemName) {
+        console.log(`Navigating to details for: ${itemName}`);
+    }
+
+    function sortInventory() {
+        if (!window.fullInventoryData) return;
+        const currentItems = window.fullInventoryData; 
+        displayInventory(currentItems, true);
+    }
+    
+    function filterInventory(category) {
+        if (!window.fullInventoryData) return;
+        
+        let filteredItems = [];
+
+        if (category === 'All') {
+            filteredItems = window.fullInventoryData;
+        } else if (category === 'Expired') {
+            filteredItems = window.fullInventoryData.filter(item => item.daysUntilExpiration < 0);
+        } else if (category === 'Active') {
+            filteredItems = window.fullInventoryData.filter(item => item.daysUntilExpiration >= 0);
+        } else {
+            filteredItems = window.fullInventoryData.filter(item => 
+                item.category === category && item.daysUntilExpiration >= 0
+            );
+        }
+            
+        displayInventory(filteredItems);
+    }
+
+    window.onload = loadCustomerInventory;
+</script>

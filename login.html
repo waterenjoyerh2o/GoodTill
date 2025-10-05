@@ -51,18 +51,18 @@ html {
     <div class="my-bordered-div">
         <h1> Welcome to GoodTill! </h1>
 
-        <a href="https://www.rutgers.edu/"><button class="custom-button">Login Through ShopRite</button></a>
+        <a href="login-external.html"><button class="custom-button">Login Through ShopRite</button></a>
         <br>
 
-        <a href="https://www.rutgers.edu/"><button class="custom-button">Create an Account</button></a>
+        <a href="create-account.html"><button class="custom-button">Create an Account</button></a>
 
-                <hr style="border: 0; height: 1px; background-color: #a4c4a4; width: 80%;">
+        <hr style="border: 0; height: 1px; background-color: #a4c4a4; width: 80%;">
         
         <h3>Login</h3>
         
         <input type="text" id="customerIdInput" class="login-input" placeholder="Enter ID">
         
-        <button class="custom-button" onclick="handleLogin()">Login</button>
+        <button class="custom-button" type="button" onclick="handleLogin()">Login</button>
     </div>
 </center>
 
@@ -71,13 +71,14 @@ html {
         const customerId = document.getElementById('customerIdInput').value.trim();
         
         if (!customerId) {
-            alert('Please enter a customer ID (e.g., 001).');
+            // This is the validation check. If you enter nothing, this alert will fire.
+            alert('Please enter a customer ID (e.g., 73853787).');
             return;
         }
 
         console.log('Attempting login for Customer ID: ' + customerId);
         
+        // This is the line that performs the redirect.
         window.location.href = `inventory-dashboard.html?id=${customerId}`;
     }
 </script>
-    

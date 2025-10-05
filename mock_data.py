@@ -2,14 +2,12 @@ import os
 import random
 from datetime import datetime, timedelta
 
-# --- Configuration ---
 OUTPUT_DIR = "customer_data_files"
 NUM_CUSTOMERS = 10
 
 FIRST_NAMES = ["Alex", "Bella", "Chris", "Dana", "Ethan", "Fiona", "George", "Hannah", "Ivan", "Julia"]
 LAST_NAMES = ["Smith", "Jones", "Williams", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor", "Anderson"]
 
-# Updated PRODUCT_CATALOG to only include the desired items
 PRODUCT_CATALOG = {
     "Produce": ["Fuji Apples", "Organic Strawberries", "Ripe Avocados"],
     "Canned Goods": ["Black Beans Can", "Tuna in Water Can"],
@@ -19,7 +17,6 @@ PRODUCT_CATALOG = {
 }
 CATEGORIES = list(PRODUCT_CATALOG.keys())
 
-# A mapping of item names to a price range for more consistent pricing
 ITEM_PRICE_RANGES = {
     "Fuji Apples": (1.99, 3.99),
     "Organic Strawberries": (3.50, 5.50),
@@ -57,23 +54,19 @@ def generate_random_data_file():
         num_items_per_customer = random.randint(10, 20)
         order_lines = []
         for _ in range(num_items_per_customer):
-            # Select a category and a random item from that category
             category = random.choice(CATEGORIES)
             item_name = random.choice(PRODUCT_CATALOG[category])
             quantity = random.randint(1, 4)
-            
-            # Use the defined price ranges for a more realistic item amount
-            min_price, max_price = ITEM_PRICE_RANGES.get(item_name, (1.00, 10.00)) # Fallback if item isn't in map
+
+            min_price, max_price = ITEM_PRICE_RANGES.get(item_name, (1.00, 10.00))
             item_amount = f"{random.uniform(min_price, max_price):.2f}"
             
-            # Date generation remains the same
             start_date = datetime(2025, 9, 1)
             end_date = datetime.now()
             time_difference = end_date - start_date
             random_days = random.randint(0, time_difference.days)    
             purchase_date = (start_date + timedelta(days=random_days)).strftime("%Y-%m-%d")
             
-            # Format the order line
             order_line = f"{item_name}, ${item_amount}, Quantity: {quantity}, Category: {category}, Date: {purchase_date}"
             order_lines.append(order_line)
 

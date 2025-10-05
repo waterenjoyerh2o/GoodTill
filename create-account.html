@@ -1,0 +1,113 @@
+<style>
+html {
+  font-family: glacial indifference;
+    color: rgb(104, 130, 104);
+}
+
+.my-bordered-div {
+    width: 250px;
+    height: 440px;
+    padding: 90px 70px;
+  background-color: #ceeace;
+    border-radius: 10px;
+}
+
+.custom-button {
+    border-radius: 7px;
+    height: 30px;
+    width: 150px;
+    border: none;
+    background-color: white; 
+    color: #688268; 
+    font-family: glacial indifference;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
+}
+
+.custom-button:hover {
+    background-color: #688268; 
+    color: white; 
+}
+
+.login-input {
+    width: 150px;
+    height: 30px; 
+    padding: 5px;
+    margin-bottom: 15px; 
+    border-radius: 7px; 
+    border: 1px solid #688268; 
+    text-align: center;
+    font-family: glacial indifference;
+    color: #688268;
+    box-sizing: border-box;
+}
+</style>
+
+<br><br><br><br>
+
+<center>
+    <div class="my-bordered-div">
+        <h1> Welcome To GoodTill! </h1>
+
+        <input type="email" id="emailInput" class="login-input" placeholder="Enter Email">
+
+        <input type="text" id="newIdInput" class="login-input" placeholder="Choose an user ID">
+        
+        <button class="custom-button">Link ShopRite Account</button>
+        <p style="font-size: 12px; margin-top: -5px;"></p>
+
+        <hr style="border: 0; height: 1px; background-color: #a4c4a4; width: 80%;">
+        
+        <button class="custom-button" type="button" onclick="handleRegistration()">Create Account</button>
+        
+        <a href="login.html" style="text-decoration: none;">
+            <button class="custom-button" type="button" >Back to Login</button>
+        </a>
+    </div>
+</center>
+
+<script>
+    async function handleRegistration() {
+        const customerId = document.getElementById('newIdInput').value.trim();
+        const email = document.getElementById('emailInput').value.trim();
+        
+        if (!email) {
+            alert('Please enter an Email address.');
+            return;
+        }
+
+        if (!customerId) {
+            alert('Please choose a Customer ID.');
+            return;
+        }
+        
+        console.log(`Attempting registration for ID: ${customerId}, Email: ${email}`);
+
+        try {
+            const response = await fetch('/api/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ 
+                    customerId: customerId, 
+                    email: email 
+                })
+            });
+
+            if (response.ok) {
+                const result = await response.text();
+                alert(`Registration successful! ${result}`);
+                
+                window.location.href = `inventory-dashboard.html?id=${customerId}`;
+            } else {
+                const errorBody = await response.text();
+                alert(`Registration Failed: ${errorBody}`);
+            }
+        } catch (error) {
+            console.error('Network or server error during registration:', error);
+            alert('An unexpected error occurred. Please try again.');
+        }
+    }
+</script>

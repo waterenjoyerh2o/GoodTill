@@ -1,27 +1,19 @@
-HannahDavis87
-11861167
+IvanWilliams22
+39613010
 --- ORDERS ---
-Fair Trade Coffee (Ground), $17.14, Quantity: 4, Category: Beverages, Date: 2025-09-26
-Salmon Fillet, $15.56, Quantity: 2, Category: Meat & Seafood, Date: 2025-09-06
-Peeled Peaches Can, $4.21, Quantity: 4, Category: Canned Goods, Date: 2025-09-14
-Chicken Breasts (2lb), $11.53, Quantity: 1, Category: Meat & Seafood, Date: 2025-09-22
-Ground Beef (1lb), $24.26, Quantity: 3, Category: Meat & Seafood, Date: 2025-09-17
-Bagels (6-pack), $3.00, Quantity: 3, Category: Bakery, Date: 2025-09-15
-Artisan Sourdough Loaf, $4.24, Quantity: 3, Category: Bakery, Date: 2025-09-26
-Fair Trade Coffee (Ground), $12.14, Quantity: 4, Category: Beverages, Date: 2025-10-04
-Ground Beef (1lb), $5.64, Quantity: 1, Category: Meat & Seafood, Date: 2025-09-16
-Tuna in Water Can, $5.82, Quantity: 1, Category: Canned Goods, Date: 2025-09-27
-Ground Beef (1lb), $29.06, Quantity: 4, Category: Meat & Seafood, Date: 2025-09-29
-Artisan Sourdough Loaf, $4.15, Quantity: 3, Category: Bakery, Date: 2025-09-16
-Bagels (6-pack), $4.65, Quantity: 3, Category: Bakery, Date: 2025-09-14
-Tuna in Water Can, $2.00, Quantity: 1, Category: Canned Goods, Date: 2025-09-12
-Sparkling Water (12pk), $27.38, Quantity: 4, Category: Beverages, Date: 2025-09-01
-Cheddar Cheese Block, $11.85, Quantity: 3, Category: Dairy, Date: 2025-09-09
-Organic Strawberries, $2.74, Quantity: 3, Category: Produce, Date: 2025-09-01
-Whole Wheat Rolls, $3.08, Quantity: 2, Category: Bakery, Date: 2025-09-02
-Ground Beef (1lb), $30.02, Quantity: 2, Category: Meat & Seafood, Date: 2025-09-02
-Artisan Sourdough Loaf, $2.15, Quantity: 1, Category: Bakery, Date: 2025-09-14
-Chicken Breasts (2lb), $19.94, Quantity: 2, Category: Meat & Seafood, Date: 2025-09-29
-Ripe Bananas, $2.11, Quantity: 4, Category: Produce, Date: 2025-10-04
-Fair Trade Coffee (Ground), $15.42, Quantity: 2, Category: Beverages, Date: 2025-09-22
-Chicken Breasts (2lb), $10.67, Quantity: 3, Category: Meat & Seafood, Date: 2025-09-10
+Artisan Sourdough Loaf, $5.10, Quantity: 3, Category: Bakery, Date: 2025-10-01
+Milk Gallon (Whole), $3.02, Quantity: 1, Category: Dairy, Date: 2025-09-22
+Tuna in Water Can, $2.37, Quantity: 4, Category: Canned Goods, Date: 2025-09-28
+Fuji Apples, $2.49, Quantity: 4, Category: Produce, Date: 2025-09-17
+Yogurt (32oz), $6.45, Quantity: 3, Category: Dairy, Date: 2025-09-30
+Milk Gallon (Whole), $3.58, Quantity: 4, Category: Dairy, Date: 2025-10-03
+Ripe Avocados, $2.11, Quantity: 1, Category: Produce, Date: 2025-09-16
+Black Beans Can, $1.23, Quantity: 3, Category: Canned Goods, Date: 2025-09-14
+Artisan Sourdough Loaf, $5.92, Quantity: 2, Category: Bakery, Date: 2025-10-02
+Artisan Sourdough Loaf, $4.56, Quantity: 4, Category: Bakery, Date: 2025-09-26
+Sparkling Water (12pk), $7.16, Quantity: 2, Category: Beverages, Date: 2025-09-14
+Tuna in Water Can, $2.39, Quantity: 2, Category: Canned Goods, Date: 2025-09-27
+Milk Gallon (Whole), $3.94, Quantity: 3, Category: Dairy, Date: 2025-09-23
+Artisan Sourdough Loaf, $4.82, Quantity: 2, Category: Bakery, Date: 2025-09-13
+Yogurt (32oz), $4.33, Quantity: 4, Category: Dairy, Date: 2025-09-24
+Yogurt (32oz), $4.66, Quantity: 2, Category: Dairy, Date: 2025-09-20

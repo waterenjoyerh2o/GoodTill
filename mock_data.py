@@ -2,21 +2,38 @@ import os
 import random
 from datetime import datetime, timedelta
 
+# --- Configuration ---
 OUTPUT_DIR = "customer_data_files"
 NUM_CUSTOMERS = 10
 
 FIRST_NAMES = ["Alex", "Bella", "Chris", "Dana", "Ethan", "Fiona", "George", "Hannah", "Ivan", "Julia"]
 LAST_NAMES = ["Smith", "Jones", "Williams", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor", "Anderson"]
 
+# Updated PRODUCT_CATALOG to only include the desired items
 PRODUCT_CATALOG = {
-    "Produce": ["Fuji Apples", "Ripe Bananas", "Seedless Grapes", "Organic Strawberries", "Ripe Avocados"],
-    "Canned Goods": ["Black Beans Can", "Diced Tomatoes Can", "Tuna in Water Can", "Cream of Mushroom Soup Can", "Peeled Peaches Can"],
-    "Bakery": ["Artisan Sourdough Loaf", "Whole Wheat Rolls", "Bagels (6-pack)"],
-    "Beverages": ["Fair Trade Coffee (Ground)", "Orange Juice Carton", "Sparkling Water (12pk)"],
-    "Dairy": ["Milk Gallon (Whole)", "Cheddar Cheese Block", "Yogurt (32oz)"],
-    "Meat & Seafood": ["Ground Beef (1lb)", "Salmon Fillet", "Chicken Breasts (2lb)"]
+    "Produce": ["Fuji Apples", "Organic Strawberries", "Ripe Avocados"],
+    "Canned Goods": ["Black Beans Can", "Tuna in Water Can"],
+    "Bakery": ["Artisan Sourdough Loaf"],
+    "Beverages": ["Orange Juice Carton", "Sparkling Water (12pk)"],
+    "Dairy": ["Milk Gallon (Whole)", "Yogurt (32oz)"]
 }
 CATEGORIES = list(PRODUCT_CATALOG.keys())
+
+# A mapping of item names to a price range for more consistent pricing
+ITEM_PRICE_RANGES = {
+    "Fuji Apples": (1.99, 3.99),
+    "Organic Strawberries": (3.50, 5.50),
+    "Ripe Avocados": (1.25, 2.50),
+    "Black Beans Can": (0.79, 1.49),
+    "Tuna in Water Can": (1.29, 2.99),
+    "Artisan Sourdough Loaf": (3.99, 6.99),
+    "Orange Juice Carton": (3.00, 5.50),
+    "Sparkling Water (12pk)": (4.50, 7.50),
+    "Milk Gallon (Whole)": (3.00, 5.00),
+    "Yogurt (32oz)": (3.50, 6.50)
+}
+# --- End Configuration ---
+
 
 def generate_random_data_file():
     print(f"Starting data generation. Creating directory: '{OUTPUT_DIR}'...")
@@ -37,25 +54,26 @@ def generate_random_data_file():
         username = f"{first}{last}{random.randint(10, 99)}"
         account_id = f"{random.randint(10000000, 99999999)}"
 
-        num_items_per_customer = random.randint(20, 30)
+        num_items_per_customer = random.randint(10, 20)
         order_lines = []
         for _ in range(num_items_per_customer):
+            # Select a category and a random item from that category
             category = random.choice(CATEGORIES)
             item_name = random.choice(PRODUCT_CATALOG[category])
             quantity = random.randint(1, 4)
             
-            if category in ["Produce", "Canned Goods", "Bakery"]:
-                item_amount = f"{random.uniform(1.25, 6.99):.2f}"
-            elif category == "Dairy":
-                item_amount = f"{random.uniform(2.50, 15.00):.2f}"
-            else: 
-                item_amount = f"{random.uniform(5.00, 35.00):.2f}"
+            # Use the defined price ranges for a more realistic item amount
+            min_price, max_price = ITEM_PRICE_RANGES.get(item_name, (1.00, 10.00)) # Fallback if item isn't in map
+            item_amount = f"{random.uniform(min_price, max_price):.2f}"
             
+            # Date generation remains the same
             start_date = datetime(2025, 9, 1)
             end_date = datetime.now()
             time_difference = end_date - start_date
             random_days = random.randint(0, time_difference.days)    
             purchase_date = (start_date + timedelta(days=random_days)).strftime("%Y-%m-%d")
+            
+            # Format the order line
             order_line = f"{item_name}, ${item_amount}, Quantity: {quantity}, Category: {category}, Date: {purchase_date}"
             order_lines.append(order_line)
 

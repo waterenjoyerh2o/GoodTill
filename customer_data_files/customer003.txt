@@ -1,28 +1,15 @@
-BellaBrown47
-50495878
+IvanAnderson99
+96013863
 --- ORDERS ---
-Bagels (6-pack), $4.79, Quantity: 1, Category: Bakery, Date: 2025-09-14
-Bagels (6-pack), $2.49, Quantity: 3, Category: Bakery, Date: 2025-09-21
-Chicken Breasts (2lb), $16.93, Quantity: 4, Category: Meat & Seafood, Date: 2025-09-06
-Milk Gallon (Whole), $13.68, Quantity: 1, Category: Dairy, Date: 2025-09-23
-Peeled Peaches Can, $2.54, Quantity: 2, Category: Canned Goods, Date: 2025-09-10
-Yogurt (32oz), $12.99, Quantity: 3, Category: Dairy, Date: 2025-09-22
-Seedless Grapes, $5.67, Quantity: 4, Category: Produce, Date: 2025-09-28
-Whole Wheat Rolls, $5.87, Quantity: 2, Category: Bakery, Date: 2025-10-03
-Organic Strawberries, $3.09, Quantity: 3, Category: Produce, Date: 2025-10-03
-Bagels (6-pack), $3.50, Quantity: 4, Category: Bakery, Date: 2025-09-21
-Cream of Mushroom Soup Can, $5.30, Quantity: 4, Category: Canned Goods, Date: 2025-09-12
-Whole Wheat Rolls, $2.53, Quantity: 1, Category: Bakery, Date: 2025-09-25
-Fair Trade Coffee (Ground), $13.76, Quantity: 2, Category: Beverages, Date: 2025-09-18
-Seedless Grapes, $1.56, Quantity: 2, Category: Produce, Date: 2025-09-18
-Diced Tomatoes Can, $2.82, Quantity: 1, Category: Canned Goods, Date: 2025-09-28
-Whole Wheat Rolls, $3.70, Quantity: 3, Category: Bakery, Date: 2025-09-11
-Ground Beef (1lb), $29.17, Quantity: 3, Category: Meat & Seafood, Date: 2025-09-01
-Whole Wheat Rolls, $3.95, Quantity: 2, Category: Bakery, Date: 2025-09-24
-Diced Tomatoes Can, $6.69, Quantity: 3, Category: Canned Goods, Date: 2025-09-05
-Cream of Mushroom Soup Can, $2.99, Quantity: 4, Category: Canned Goods, Date: 2025-09-25
-Ripe Bananas, $1.90, Quantity: 4, Category: Produce, Date: 2025-09-21
-Ground Beef (1lb), $25.92, Quantity: 3, Category: Meat & Seafood, Date: 2025-09-21
-Organic Strawberries, $2.35, Quantity: 1, Category: Produce, Date: 2025-09-10
-Fair Trade Coffee (Ground), $12.75, Quantity: 1, Category: Beverages, Date: 2025-09-05
-Black Beans Can, $3.62, Quantity: 4, Category: Canned Goods, Date: 2025-09-09
+Milk Gallon (Whole), $4.54, Quantity: 2, Category: Dairy, Date: 2025-10-02
+Ripe Avocados, $1.96, Quantity: 3, Category: Produce, Date: 2025-09-25
+Milk Gallon (Whole), $4.61, Quantity: 1, Category: Dairy, Date: 2025-09-11
+Orange Juice Carton, $5.36, Quantity: 1, Category: Beverages, Date: 2025-09-15
+Black Beans Can, $1.27, Quantity: 2, Category: Canned Goods, Date: 2025-09-03
+Orange Juice Carton, $4.75, Quantity: 4, Category: Beverages, Date: 2025-09-10
+Yogurt (32oz), $5.45, Quantity: 4, Category: Dairy, Date: 2025-09-13
+Yogurt (32oz), $5.67, Quantity: 4, Category: Dairy, Date: 2025-09-05
+Orange Juice Carton, $3.90, Quantity: 1, Category: Beverages, Date: 2025-09-30
+Tuna in Water Can, $2.29, Quantity: 1, Category: Canned Goods, Date: 2025-09-13
+Yogurt (32oz), $4.25, Quantity: 3, Category: Dairy, Date: 2025-09-21
+Orange Juice Carton, $5.36, Quantity: 4, Category: Beverages, Date: 2025-09-07

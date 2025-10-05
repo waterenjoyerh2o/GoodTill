@@ -1,29 +1,22 @@
-IvanMoore91
-28693597
+ChrisMiller30
+66781031
 --- ORDERS ---
-Bagels (6-pack), $2.16, Quantity: 2, Category: Bakery, Date: 2025-09-13
-Organic Strawberries, $3.73, Quantity: 3, Category: Produce, Date: 2025-10-01
-Organic Strawberries, $5.06, Quantity: 3, Category: Produce, Date: 2025-09-01
-Ground Beef (1lb), $10.62, Quantity: 3, Category: Meat & Seafood, Date: 2025-09-27
-Cheddar Cheese Block, $14.94, Quantity: 3, Category: Dairy, Date: 2025-10-03
-Diced Tomatoes Can, $2.07, Quantity: 3, Category: Canned Goods, Date: 2025-09-28
-Ripe Bananas, $5.70, Quantity: 4, Category: Produce, Date: 2025-09-15
-Fuji Apples, $3.47, Quantity: 3, Category: Produce, Date: 2025-09-20
-Cheddar Cheese Block, $10.01, Quantity: 4, Category: Dairy, Date: 2025-09-02
-Cream of Mushroom Soup Can, $6.59, Quantity: 3, Category: Canned Goods, Date: 2025-09-01
-Whole Wheat Rolls, $4.62, Quantity: 1, Category: Bakery, Date: 2025-09-11
-Orange Juice Carton, $11.54, Quantity: 1, Category: Beverages, Date: 2025-09-14
-Ripe Bananas, $3.88, Quantity: 4, Category: Produce, Date: 2025-09-07
-Bagels (6-pack), $6.74, Quantity: 3, Category: Bakery, Date: 2025-09-05
-Black Beans Can, $6.35, Quantity: 1, Category: Canned Goods, Date: 2025-09-01
-Salmon Fillet, $29.09, Quantity: 1, Category: Meat & Seafood, Date: 2025-09-28
-Sparkling Water (12pk), $24.80, Quantity: 2, Category: Beverages, Date: 2025-09-10
-Orange Juice Carton, $9.25, Quantity: 3, Category: Beverages, Date: 2025-09-28
-Orange Juice Carton, $32.39, Quantity: 2, Category: Beverages, Date: 2025-10-01
-Milk Gallon (Whole), $13.98, Quantity: 2, Category: Dairy, Date: 2025-09-13
-Sparkling Water (12pk), $5.96, Quantity: 4, Category: Beverages, Date: 2025-09-16
-Orange Juice Carton, $17.23, Quantity: 2, Category: Beverages, Date: 2025-09-25
-Artisan Sourdough Loaf, $6.00, Quantity: 4, Category: Bakery, Date: 2025-10-01
-Yogurt (32oz), $6.99, Quantity: 1, Category: Dairy, Date: 2025-09-13
-Ripe Bananas, $1.28, Quantity: 1, Category: Produce, Date: 2025-09-11
-Ground Beef (1lb), $18.85, Quantity: 3, Category: Meat & Seafood, Date: 2025-09-13
+Yogurt (32oz), $6.41, Quantity: 2, Category: Dairy, Date: 2025-09-05
+Orange Juice Carton, $5.29, Quantity: 4, Category: Beverages, Date: 2025-09-09
+Organic Strawberries, $5.09, Quantity: 4, Category: Produce, Date: 2025-09-08
+Milk Gallon (Whole), $4.91, Quantity: 1, Category: Dairy, Date: 2025-09-23
+Fuji Apples, $2.35, Quantity: 1, Category: Produce, Date: 2025-09-03
+Milk Gallon (Whole), $3.07, Quantity: 4, Category: Dairy, Date: 2025-09-08
+Orange Juice Carton, $4.28, Quantity: 3, Category: Beverages, Date: 2025-09-01
+Black Beans Can, $1.19, Quantity: 3, Category: Canned Goods, Date: 2025-10-02
+Yogurt (32oz), $4.85, Quantity: 2, Category: Dairy, Date: 2025-09-22
+Sparkling Water (12pk), $4.51, Quantity: 4, Category: Beverages, Date: 2025-09-13
+Tuna in Water Can, $2.87, Quantity: 3, Category: Canned Goods, Date: 2025-09-10
+Artisan Sourdough Loaf, $5.25, Quantity: 4, Category: Bakery, Date: 2025-10-04
+Artisan Sourdough Loaf, $4.91, Quantity: 4, Category: Bakery, Date: 2025-09-12
+Sparkling Water (12pk), $7.03, Quantity: 1, Category: Beverages, Date: 2025-09-18
+Orange Juice Carton, $3.68, Quantity: 4, Category: Beverages, Date: 2025-09-03
+Orange Juice Carton, $5.37, Quantity: 2, Category: Beverages, Date: 2025-09-06
+Orange Juice Carton, $4.38, Quantity: 1, Category: Beverages, Date: 2025-09-21
+Black Beans Can, $1.10, Quantity: 1, Category: Canned Goods, Date: 2025-09-07
+Sparkling Water (12pk), $7.20, Quantity: 2, Category: Beverages, Date: 2025-09-05

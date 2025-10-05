@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Item - Expiration Tracker</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and define custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-teal': '#10b981', // Emerald 500
+                        'soft-gray': '#f9fafb',   // Gray 50
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Use Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+</head>
+<body class="bg-soft-gray font-sans min-h-screen p-4 md:p-8">
+
+    <!-- Main Application Container -->
+    <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
+        
+        <!-- Header Section -->
+        <header class="p-6 bg-primary-teal text-white">
+            <a href="#" class="text-sm opacity-80 hover:opacity-100" onclick="alert('This would navigate back to the main list.')">
+                &larr; Back to Pantry
+            </a>
+            <h1 class="text-3xl font-bold mt-2">Track New Item</h1>
+            <p class="text-sm opacity-90">Scan, upload, or manually enter the details of your food item.</p>
+        </header>
+
+        <!-- Main Content: Input Sections -->
+        <main class="p-6 space-y-8">
+            
+            <!-- Message Box for Feedback (simulating alerts) -->
+            <div id="messageBox" class="hidden p-4 rounded-xl bg-green-100 text-green-700 font-medium border border-green-300">
+                <!-- Message will be displayed here -->
+            </div>
+
+            <!-- 1. Scan/Upload Section -->
+            <section class="border-2 border-dashed border-teal-300 bg-teal-50 p-6 rounded-2xl text-center transition duration-300 hover:bg-teal-100">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4 flex items-center justify-center">
+                    <span class="text-3xl mr-2">📸</span>
+                    Scan or Upload Item Photo
+                </h2>
+                <label for="file-upload" class="cursor-pointer inline-block bg-primary-teal text-white py-3 px-6 rounded-xl shadow-lg hover:bg-teal-600 transition duration-150 transform hover:scale-[1.02]">
+                    Choose File to Upload (Simulated)
+                </label>
+                <input id="file-upload" type="file" accept="image/*" class="hidden">
+                <p class="text-sm text-gray-500 mt-2">Upload a photo to automatically suggest the product name and date.</p>
+            </section>
+            
+            <div class="flex items-center space-x-4">
+                <hr class="flex-grow border-gray-200">
+                <span class="text-gray-400 font-medium">OR ENTER MANUALLY</span>
+                <hr class="flex-grow border-gray-200">
+            </div>
+
+            <!-- 2. Manual Input Section -->
+            <section id="manual-input" class="space-y-6">
+                
+                <!-- Product Name Input -->
+                <div>
+                    <label for="product-name" class="block text-lg font-medium text-gray-700 mb-2">Product Name</label>
+                    <input 
+                        type="text" 
+                        id="product-name" 
+                        placeholder="e.g., Organic Strawberries, Milk Gallon (Whole)"
+                        class="mt-1 block w-full p-3 border border-gray-300 rounded-xl shadow-sm focus:border-primary-teal focus:ring-primary-teal transition duration-150"
+                    >
+                </div>
+
+                <!-- Expiration Date Input -->
+                <div>
+                    <label for="expiration-date" class="block text-lg font-medium text-gray-700 mb-2">Expiration Date</label>
+                    <input 
+                        type="date" 
+                        id="expiration-date" 
+                        value=""
+                        class="mt-1 block w-full p-3 border border-gray-300 rounded-xl shadow-sm focus:border-primary-teal focus:ring-primary-teal transition duration-150"
+                    >
+                </div>
+                
+                <!-- Quantity Input (helpful for tracking) -->
+                <div>
+                    <label for="quantity" class="block text-lg font-medium text-gray-700 mb-2">Quantity</label>
+                    <input 
+                        type="number" 
+                        id="quantity" 
+                        value="1"
+                        min="1"
+                        class="mt-1 block w-full p-3 border border-gray-300 rounded-xl shadow-sm focus:border-primary-teal focus:ring-primary-teal transition duration-150"
+                    >
+                </div>
+
+                <!-- Action Button -->
+                <button 
+                    onclick="submitItem()"
+                    class="w-full py-4 text-xl font-bold bg-indigo-600 text-white rounded-xl shadow-lg transition duration-150 hover:bg-indigo-700 active:bg-indigo-800 transform hover:scale-[1.01]"
+                >
+                    Add Item to Pantry
+                </button>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Simple JavaScript for Interaction -->
+    <script>
+        /**
+         * Converts base64 encoded PCM audio data to a WAV Blob.
+         * This utility is included for general completeness if TTS or similar API interaction were implemented,
+         * but is not strictly necessary for this form submission example.
+         * @param {Int16Array} pcm16 - Signed 16-bit PCM data.
+         * @param {number} sampleRate - The sample rate of the audio (e.g., 24000).
+         * @returns {Blob} The WAV audio Blob.
+         */
+        function pcmToWav(pcm16, sampleRate) {
+            const numChannels = 1;
+            const bytesPerSample = 2;
+            const buffer = new ArrayBuffer(44 + pcm16.byteLength);
+            const view = new DataView(buffer);
+            let offset = 0;
+
+            // RIFF chunk descriptor
+            writeString('RIFF');
+            view.setUint32(offset, 36 + pcm16.byteLength, true); offset += 4;
+            writeString('WAVE');
+
+            // FMT sub-chunk
+            writeString('fmt ');
+            view.setUint32(offset, 16, true); offset += 4; // Sub-chunk size (16 for PCM)
+            view.setUint16(offset, 1, true); offset += 2;  // Audio format (1 for PCM)
+            view.setUint16(offset, numChannels, true); offset += 2; // Number of channels
+            view.setUint32(offset, sampleRate, true); offset += 4; // Sample rate
+            view.setUint32(offset, sampleRate * numChannels * bytesPerSample, true); offset += 4; // Byte rate
+            view.setUint16(offset, numChannels * bytesPerSample, true); offset += 2; // Block align
+            view.setUint16(offset, 16, true); offset += 2; // Bits per sample (16)
+
+            // Data sub-chunk
+            writeString('data');
+            view.setUint32(offset, pcm16.byteLength, true); offset += 4; // Sub-chunk size (data size)
+
+            // Write the PCM data
+            const pcmBytes = new Uint8Array(pcm16.buffer);
+            for (let i = 0; i < pcmBytes.length; i++) {
+                view.setUint8(offset + i, pcmBytes[i]);
+            }
+
+            return new Blob([view], { type: 'audio/wav' });
+
+            function writeString(s) {
+                for (let i = 0; i < s.length; i++) {
+                    view.setUint8(offset + i, s.charCodeAt(i));
+                }
+                offset += s.length;
+            }
+        }
+
+        /**
+         * Simulates a form submission and provides user feedback.
+         */
+        function submitItem() {
+            const productName = document.getElementById('product-name').value.trim();
+            const expirationDate = document.getElementById('expiration-date').value;
+            const quantity = document.getElementById('quantity').value;
+            const messageBox = document.getElementById('messageBox');
+
+            if (!productName || !expirationDate) {
+                // Display error message
+                messageBox.classList.remove('bg-green-100', 'text-green-700', 'border-green-300');
+                messageBox.classList.add('bg-red-100', 'text-red-700', 'border-red-300');
+                messageBox.innerHTML = '<strong>Error:</strong> Please enter both a Product Name and an Expiration Date.';
+                messageBox.classList.remove('hidden');
+                return;
+            }
+
+            // Simulate successful submission
+            console.log(`Submitting Item: ${productName}, Date: ${expirationDate}, Quantity: ${quantity}`);
+            
+            // Display success message
+            messageBox.classList.remove('bg-red-100', 'text-red-700', 'border-red-300');
+            messageBox.classList.add('bg-green-100', 'text-green-700', 'border-green-300');
+            messageBox.innerHTML = `<strong>Success!</strong> "${productName}" (x${quantity}) has been added to your pantry, expiring on ${expirationDate}.`;
+            messageBox.classList.remove('hidden');
+
+            // Clear inputs after simulated success
+            document.getElementById('product-name').value = '';
+            document.getElementById('expiration-date').value = '';
+            document.getElementById('quantity').value = '1';
+
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                messageBox.classList.add('hidden');
+            }, 5000);
+        }
+
+        // Optional: Provide feedback on file upload attempt
+        document.getElementById('file-upload').addEventListener('change', function() {
+            const messageBox = document.getElementById('messageBox');
+            if (this.files && this.files[0]) {
+                const fileName = this.files[0].name;
+                
+                // Display success message for file upload simulation
+                messageBox.classList.remove('bg-red-100', 'text-red-700', 'border-red-300');
+                messageBox.classList.add('bg-green-100', 'text-green-700', 'border-green-300');
+                messageBox.innerHTML = `<strong>File Uploaded:</strong> ${fileName}. (Simulated auto-fill of fields below.)`;
+                messageBox.classList.remove('hidden');
+                
+                // Simulate auto-filling the fields from the scan/upload
+                document.getElementById('product-name').value = 'Fuji Apples (Scanned)';
+                document.getElementById('expiration-date').value = '2025-10-15';
+
+                setTimeout(() => {
+                    messageBox.classList.add('hidden');
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+</html>

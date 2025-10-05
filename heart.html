@@ -1,0 +1,230 @@
+<style>
+html {
+  font-family: glacial indifference;
+  color: rgb(104, 130, 104);
+}
+
+.my-bordered-div {
+  width: 400px;
+  background-color: #ceeace;
+  border-radius: 10px;
+  padding: 40px 30px;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container1,
+.flex-container2,
+.flex-container3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.div1, .div2 {
+  width: 48%;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.background {
+background-color: #688268;
+}
+
+.custom-button {
+  border-radius: 7px;
+  height: 30px;
+  width:200px;
+  border: none;
+  background-color: white;
+  color: #688268;
+  font-family: glacial indifference;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #688268;
+  color: white;
+}
+
+.woo {
+  border-radius: 7px;
+  height: 30px;
+  width: 200px;
+  border: none;
+  background-color: #688268;
+  color: #ffffff;
+  font-family: glacial indifference;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.woo:hover {
+  background-color: #ffffff;
+  color: #688268;
+}
+
+.custom-button2 {
+  margin-left: 0;
+  height: 100px;
+  width: 100%;
+  border: none;
+  background-color: white;
+  color: #688268;
+  font-family: glacial indifference;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-button2:hover {
+  background-color: #688268;
+  color: white;
+}
+
+.custom-button3 {
+  border-radius: 7px;
+  height: 30px;
+  width:200px;
+  border: none;
+  background-color: rgb(206, 206, 206);
+  color: #688268;
+  font-family: glacial indifference;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+</style>
+
+<br>
+
+<center>
+  <div class="my-bordered-div">
+        <h1> GoodTill </h1>
+
+    <h2>Find & Donate to Food Banks Near You!</h2>
+
+    <button class="custom-button3">Sort By Food Banks</button><br><br>
+
+    <div class="button-container">
+      <a href="https://www.rutgers.edu/"><button class="custom-button">Sort By Closely Expired Food</button></a>
+    </div>
+
+    <br>
+
+    <a href="https://www.rutgers.edu/"><button class="woo">Reset Location: 08901</button></a>
+
+    <br><br>
+
+    <button class="custom-button2">
+        <div><strong>Highland Park Community Food Pantry</strong><br>220 S 6th Ave, Highland Park, NJ 08904<br><br>Would Prefer Your: Milk, Bread, Eggs</div>
+    </button>
+
+    <br>
+
+    <button class="custom-button2">
+        <div><strong>Five Loaves Food Pantry</strong><br>100 College Ave, New Brunswick, NJ 08901<br><br>Would Prefer Your: Bread</div>
+    </button>
+
+    <br>
+
+    <button class="custom-button2">
+        <div><strong>Franklin Food Bank</strong><br>224 Churchill Ave, Somerset, NJ 08873<br><br>Would Prefer Your: Milk, Eggs</div>
+    </button>
+
+
+<br>
+<br>
+<div class="button-container">
+
+<div class="mydict">
+	<div>
+		<label>
+			<input type="radio" name="radio">
+			<span><a href="home.html"><img src="https://i.ibb.co/yFqWPS8f/home.png" width="20" height="20"></a></span>
+		</label>
+		<label>
+			<input type="radio" name="radio">
+			<span><a href="search.html"><img src="https://i.ibb.co/nM3VPrGM/magnifying-glass.png"width="20" height="20"></a></span>
+		</label>
+		<label>
+			<input type="radio" name="radio" checked="">
+			<span><a href="heart.html"><img src="https://i.ibb.co/hxsQLw09/heart.png"width="20" height="20"></a></span>
+		</label>
+        		<label>
+			<input type="radio" name="radio">
+			<span><a href="camera.html"><img src="https://i.ibb.co/XgGpBny/photo-camera-interface-symbol-for-button.png"width="20" height="20"></a></span>
+		</label>
+    </div>
+    </div>
+  </div>
+</center>
+
+
+
+<style>
+/* From Uiverse.io by Pradeepsaranbishnoi */ 
+:focus {
+  outline: 0;
+  border-color: #2260ff;
+  box-shadow: 0 0 0 4px #b5c9fc;
+}
+
+.mydict div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+.mydict input[type="radio"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.mydict input[type="radio"]:checked + span {
+  box-shadow: 0 0 0 0.0625em #00ed14;
+  background-color: #e1ffde;
+  z-index: 1;
+  color: #00ed14;
+}
+
+label span {
+  display: block;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 0.375em .75em;
+  position: relative;
+  margin-left: .0625em;
+  box-shadow: 0 0 0 0.0625em #b5bfd9;
+  letter-spacing: .05em;
+  color: #3e4963;
+  text-align: center;
+  transition: background-color .5s ease;
+}
+
+label:first-child span {
+  border-radius: .375em 0 0 .375em;
+}
+
+label:last-child span {
+  border-radius: 0 .375em .375em 0;
+}
+
+    </style>

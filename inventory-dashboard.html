@@ -286,7 +286,7 @@ label:last-child span {
             const response = await fetch(filePath);
             
             if (response.status === 404) {
-                welcomeHeader.textContent = `Hi Customer ${customerId}!`;
+                welcomeHeader.textContent = `Hello Hackru!`;
                 inventoryContainer.innerHTML = '<p>No inventory file found for this ID.</p>';
                 return;
             }
@@ -299,7 +299,7 @@ label:last-child span {
             window.fullInventoryData = inventory;
             
             const userName = customerId === '73853787' ? 'EthanSmith70' : `Customer ${customerId}`;
-            welcomeHeader.textContent = `Hi ${userName}!`;
+            welcomeHeader.textContent = `Hello HackRU!`;
 
             // Load only 'Active' (non-expired) items by default
             filterInventory('Active'); 

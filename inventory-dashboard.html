@@ -35,6 +35,17 @@ html {
   justify-content: center;
 }
 
+/* NEW CSS for Image Aspect Ratio */
+.div1 img {
+  max-width: 150px; /* Max width for the image */
+  max-height: 100px; /* Max height for the image */
+  width: auto;       /* Maintain aspect ratio */
+  height: auto;      /* Maintain aspect ratio */
+  object-fit: contain; /* Prevents squishing and fits the image within the container */
+  display: block;
+}
+/* END NEW CSS */
+
 .div2 {
     text-align: left;
     align-items: flex-start;
@@ -243,14 +254,46 @@ label:last-child span {
         return { status, statusText, daysLeft };
     }
 
+    // --- UPDATED getMockImage FUNCTION ---
     function getMockImage(name) {
-        if (name.toLowerCase().includes('milk') || name.toLowerCase().includes('yogurt')) return 'https://i.ibb.co/MxHSrvL7/Untitled-design-20.png';
-        if (name.toLowerCase().includes('apple')) return 'https://i.ibb.co/c8S0mR8/apple.png';
-        if (name.toLowerCase().includes('bean') || name.toLowerCase().includes('tuna')) return 'https://i.ibb.co/h7W0187/canned.png';
-        if (name.toLowerCase().includes('avocado') || name.toLowerCase().includes('strawberries')) return 'https://i.ibb.co/Wc6Y5Qf/avocado.png';
-        if (name.toLowerCase().includes('sourdough') || name.toLowerCase().includes('loaf')) return 'https://i.ibb.co/B2qdKQ3b/Untitled-design-18.png';
-        return 'https://via.placeholder.com/150x100?text=Food+Item';
+        // Standardize the item name for case-insensitive keyword lookup
+        const nameKey = name.toLowerCase().trim();
+        let pathName = '';
+
+        // Match inventory item name to your specific local image filenames
+        if (nameKey.includes('black bean')) {
+            pathName = 'BlackBeansCan';
+        } else if (nameKey.includes('fuji apple')) {
+            pathName = 'FujiApple';
+        } else if (nameKey.includes('milk')) {
+            pathName = 'milk';
+        } else if (nameKey.includes('orange juice')) {
+            pathName = 'OrangeJuice';
+        } else if (nameKey.includes('strawberr')) { 
+            // Handles 'OrganicStrewberries' (note the spelling match to your file)
+            pathName = 'OrganicStrewberries';
+        } else if (nameKey.includes('salmon')) {
+            pathName = 'SalmonInCan';
+        } else if (nameKey.includes('sourdough') || nameKey.includes('bread')) {
+            pathName = 'Sourdough';
+        } else if (nameKey.includes('sparkling water')) {
+            // Note: Matches 'SparkelingWater' (note the spelling match to your file)
+            pathName = 'SparkelingWater';
+        } else if (nameKey.includes('avocado')) {
+            pathName = 'vocados';
+        } else if (nameKey.includes('yogurt')) {
+            pathName = 'Yogurt';
+        } else {
+            // Final fallback to the placeholder
+            return 'https://via.placeholder.com/150x100?text=' + name.replace(/\s/g, '+');
+        }
+
+        // Return the path using the correct filename and .png extension
+        // This assumes your images are in a folder named 'itemImages' relative to this HTML file.
+        return `./itemImages/${pathName}.png`;
     }
+    // --- END getMockImage FUNCTION ---
+
 
     function createFoodItemButton(item) {
         const daysLeft = item.daysUntilExpiration;
@@ -261,7 +304,7 @@ label:last-child span {
         return `
             <button class="custom-button2" data-category="${item.category}" data-daysleft="${daysLeft}" onclick="viewItemDetails('${itemName}')">
                 <div class="flex-container">
-                    <div class="div1"><img src="${imageSrc}" height="100px" width="150px"></div>
+                    <div class="div1"><img src="${imageSrc}"></div>
                     <div class="div2">
                         <h2>${itemName}</h2>
                         ${status} will expire ${statusText}

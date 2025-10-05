@@ -3,7 +3,7 @@
     { "name": "Milk Gallon (Whole)", "category": "Dairy", "quantity": 3, "daysUntilExpiration": 7 },
     { "name": "Ripe Avocados", "category": "Produce", "quantity": 7, "daysUntilExpiration": -15 },
     { "name": "Artisan Sourdough Loaf", "category": "Bakery", "quantity": 2, "daysUntilExpiration": 1 },
-    { "name": "Tuna in Water Can", "category": "Canned Goods", "quantity": 10, "daysUntilExpiration": 346 },
+    { "name": "Salmon in Water Can", "category": "Canned Goods", "quantity": 10, "daysUntilExpiration": 346 },
     { "name": "Black Beans Can", "category": "Canned Goods", "quantity": 7, "daysUntilExpiration": 340 },
     { "name": "Yogurt (32oz)", "category": "Dairy", "quantity": 1, "daysUntilExpiration": 12 },
     { "name": "Fuji Apples", "category": "Produce", "quantity": 5, "daysUntilExpiration": -2 }
